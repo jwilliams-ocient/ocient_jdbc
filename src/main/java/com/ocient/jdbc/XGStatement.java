@@ -182,7 +182,7 @@ public class XGStatement implements Statement
 	 * than the timeout specified by {@link #getQueryTimeout()}.
 	 * 
 	 * @param task 				the task to execute
-	 * @param queryId 			the query associated with this task
+	 * @param optQueryId 		the query associated with this task. Empty of none exists
 	 * @param timeoutMillis		the number of milliseconds to wait before firing off a kill query
 	 * 							command to the sql node
 	 * 
