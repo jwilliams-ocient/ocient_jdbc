@@ -1106,6 +1106,8 @@ public class XGStatement implements Statement
 					b1 = ListPlan.newBuilder();
 					br = ClientWireProtocol.ListPlanResponse.newBuilder();
 					setWrapped = b2.getClass().getMethod("setListPlan", c);
+					forceFlag = false;
+					redirectFlag = false;
 					break;
 				case CANCEL_QUERY:
 					c = CancelQuery.class;

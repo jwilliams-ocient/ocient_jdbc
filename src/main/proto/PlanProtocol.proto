@@ -824,6 +824,10 @@ message SortOperator
 	//one sort stream
 	//There is no guarantee that the partitioning points are in order
 	repeated SortPartition point = 4;
+	//The hash sort keys if there are any, primarily only for window
+	//these can be different from the regular sort keys
+	//if this isn't empty we do a hash based sort mutliplexing instead
+	repeated string hashSortKeys = 5;
 }
 
 message RootOperator

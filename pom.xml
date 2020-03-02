@@ -4,6 +4,7 @@
   <groupId>com.ocient</groupId>
   <artifactId>ocient-jdbc4</artifactId>
   <version>1.8</version> <!--JDBC VERSION NUMBER HERE-->
+  <version>1.9</version> <!--JDBC VERSION NUMBER HERE-->
   <name>${project.groupId}:${project.artifactId}</name>
   <description>JDBC Driver for connecting to an Ocient Database</description>
   <url>http://www.ocient.com</url>
