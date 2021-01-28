@@ -1471,12 +1471,14 @@ public class XGStatement implements Statement {
           b1 = ExecutePlan.newBuilder();
           br = ClientWireProtocol.ExecuteQueryResponse.newBuilder();
           setWrapped = b2.getClass().getMethod("setExecutePlan", c);
+          hasQueryId = true;
           break;
         case EXECUTE_INLINE_PLAN:
           c = ExecuteInlinePlan.class;
           b1 = ExecuteInlinePlan.newBuilder();
           br = ClientWireProtocol.ExecuteQueryResponse.newBuilder();
           setWrapped = b2.getClass().getMethod("setExecuteInlinePlan", c);
+          hasQueryId = true;
           break;
         case EXPLAIN_PLAN:
           c = ExplainPlan.class;
